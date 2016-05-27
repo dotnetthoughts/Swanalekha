@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Swanalekha</title>
+    <link href="lib/winjs-4.0.1/css/ui-light.css" rel="stylesheet" />
+    <script src="lib/winjs-4.0.1/js/base.js"></script>
+    <script src="lib/winjs-4.0.1/js/ui.js"></script>
+    <link href="css/default.css" rel="stylesheet" />
+    <script src="js/main.js"></script>
+    <script src="js/swanalekha-ml.js"></script>
+    <script src="js/UICommands.js"></script>
+</head>
+<body class="win-type-body">
+    <div class="basicToolbar" data-win-control="WinJS.UI.ToolBar">
+        <button data-win-control="WinJS.UI.Command" data-win-options="{id:'cmdSave',label:'Save',section:'primary',type:'button',icon: 'save', onclick:UICommands.saveCommand}"></button>
+        <hr data-win-control="WinJS.UI.Command" data-win-options="{type:'separator'}" />
+        <button data-win-control="WinJS.UI.Command" data-win-options="{id:'cmdCopy',label:'Copy',section:'primary',type:'button',icon: 'copy', onclick:UICommands.copyCommand}"></button>
+        <button data-win-control="WinJS.UI.Command" data-win-options="{id:'cmdClear',label:'Clear',section:'primary',type:'button',icon: 'clear', onclick:UICommands.clearCommand}"></button>
+        <hr data-win-control="WinJS.UI.Command" data-win-options="{type:'separator'}" />
+        <button data-win-control="WinJS.UI.Command" data-win-options="{id:'cmdFontSize',label:'Font size',section:'primary',type:'button',icon: 'fontsize', onclick:UICommands.changeFontSizeCommand}"></button>
+        <hr data-win-control="WinJS.UI.Command" data-win-options="{type:'separator'}" />
+        <button data-win-control="WinJS.UI.Command" data-win-options="{id:'cmdShare',label:'Share',section:'primary',type:'button',icon: 'reshare', onclick:UICommands.shareCommand}"></button>
+        <button data-win-control="WinJS.UI.Command" data-win-options="{id:'cmdAbout', label:'About', section:'primary',icon:'help', type:'button', onclick:UICommands.aboutCommand}"></button>
+    </div>
+    <textarea id="editor" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+    <div class="box">
+        <div data-win-control="WinJS.UI.ContentDialog" data-win-options="{
+             title: 'About Swanalekha',
+             primaryCommandText: 'OK' }">
+            Swanalekha is a Windows 10 Malayalam typing utility.
+            Swanalekha developed by <a href="http://dotnetthoughts.net">Anuraj</a>.
+            Swanalekha is developed using Swanalekha Javascript(swanalekha-ml.js) from <a href="http://thottingal.in/">Santhosh Thottingal</a>.
+            It is licensed under MIT License.
+        </div>
+    </div>
+</body>
+</html>

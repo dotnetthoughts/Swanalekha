@@ -1,0 +1,7 @@
+﻿#editor {
+    box-sizing: border-box; /* fit parent width */
+    height: 100%;
+    width: 100%;
+    border: solid 1px #000;
+    font-size:medium;
+}
