@@ -22,7 +22,7 @@
         var currentFontSize = editor.style.fontSize || "medium";
         var fontSizes = ["xx-small", "x-small", "small", "medium", "large", "x-large", "xx-large"];
         for (var i = 0; i < fontSizes.length; i++) {
-            if (fontSizes[i] == currentFontSize) {
+            if (fontSizes[i] === currentFontSize) {
                 if (i + 1 < fontSizes.length) {
                     editor.style.fontSize = fontSizes[i + 1];
                     break;
