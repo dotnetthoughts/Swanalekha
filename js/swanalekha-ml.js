@@ -2179,10 +2179,11 @@ function swanalekha(widget, options) {
 	}
 
 	function isToggleEvent(event) {
-		var keyCode;
+		//var keyCode;
 
-		keyCode = event.keyCode || event.which;
-		return (keyCode === 77 && event.ctrlKey);
+		//keyCode = event.keyCode || event.which;
+	    //return (keyCode === 77 && event.ctrlKey);
+	    return false;
 	}
 
 	function listen() {

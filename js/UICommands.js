@@ -1,4 +1,8 @@
 ﻿WinJS.Namespace.define("UICommands", {
+    helpCommand: WinJS.UI.eventHandler(function (ev) {
+        var uri = new Windows.Foundation.Uri("https://github.com/dotnetthoughts/Swanalekha/blob/master/help/index.md");
+        Windows.System.Launcher.launchUriAsync(uri);
+    }),
     aboutCommand: WinJS.UI.eventHandler(function (ev) {
         var contentDialog = document.querySelector(".win-contentdialog").winControl;
         contentDialog.show();
@@ -29,21 +33,9 @@
             }
         }
     }),
-    copyCommand: WinJS.UI.eventHandler(function (ev) {
-        var editor = document.getElementById("editor");
-        var text = editor.value;
-        text = text.slice(0, editor.selectionStart) + text.slice(editor.selectionEnd);
-        var clipboard = Windows.ApplicationModel.DataTransfer.Clipboard;
-        var dataTransfer = Windows.ApplicationModel.DataTransfer;
-        var dataPackage = new dataTransfer.DataPackage();
-        dataPackage.setText(text);
-        clipboard.setContent(dataPackage);
-    }),
     clearCommand: WinJS.UI.eventHandler(function (ev) {
         var editor = document.getElementById("editor");
-        var text = editor.value;
-        text = text.slice(0, editor.selectionStart) + text.slice(editor.selectionEnd);
-        editor.value = text;
+        editor.value = "";
     }),
     saveCommand: WinJS.UI.eventHandler(function (ev) {
         var command = ev.currentTarget;

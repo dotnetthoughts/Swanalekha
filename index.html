@@ -15,15 +15,15 @@
     <div class="basicToolbar" data-win-control="WinJS.UI.ToolBar">
         <button data-win-control="WinJS.UI.Command" data-win-options="{id:'cmdSave',label:'Save',section:'primary',type:'button',icon: 'save', onclick:UICommands.saveCommand}"></button>
         <hr data-win-control="WinJS.UI.Command" data-win-options="{type:'separator'}" />
-        <button data-win-control="WinJS.UI.Command" data-win-options="{id:'cmdCopy',label:'Copy',section:'primary',type:'button',icon: 'copy', onclick:UICommands.copyCommand}"></button>
-        <button data-win-control="WinJS.UI.Command" data-win-options="{id:'cmdClear',label:'Clear',section:'primary',type:'button',icon: 'clear', onclick:UICommands.clearCommand}"></button>
+        <button data-win-control="WinJS.UI.Command" data-win-options="{id:'cmdClear',label:'Clear',section:'primary',type:'button',icon: 'delete', onclick:UICommands.clearCommand}"></button>
         <hr data-win-control="WinJS.UI.Command" data-win-options="{type:'separator'}" />
         <button data-win-control="WinJS.UI.Command" data-win-options="{id:'cmdFontSize',label:'Font size',section:'primary',type:'button',icon: 'fontsize', onclick:UICommands.changeFontSizeCommand}"></button>
         <hr data-win-control="WinJS.UI.Command" data-win-options="{type:'separator'}" />
         <button data-win-control="WinJS.UI.Command" data-win-options="{id:'cmdShare',label:'Share',section:'primary',type:'button',icon: 'reshare', onclick:UICommands.shareCommand}"></button>
-        <button data-win-control="WinJS.UI.Command" data-win-options="{id:'cmdAbout', label:'About', section:'primary',icon:'help', type:'button', onclick:UICommands.aboutCommand}"></button>
+        <button data-win-control="WinJS.UI.Command" data-win-options="{id:'cmdHelp', label:'Help', section:'secondary',type:'button', onclick:UICommands.helpCommand}"></button>
+        <button data-win-control="WinJS.UI.Command" data-win-options="{id:'cmdAbout', label:'About', section:'secondary',type:'button', onclick:UICommands.aboutCommand}"></button>
     </div>
-    <textarea id="editor" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>
+    <textarea id="editor" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" data-widget-enabled="true"></textarea>
     <div class="box">
         <div data-win-control="WinJS.UI.ContentDialog" data-win-options="{
              title: 'About Swanalekha',
