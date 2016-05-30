@@ -4,7 +4,7 @@ It is a Malayalam Editor for Windows 10. It uses the online Swanalekha script. H
 
 ![ML typing](Ml-lipi.png)
 
-The script was orignally written by [http://thottingal.in/](Santhosh Thottingal), thanks to him.
-Developed by Anuraj.
+The script was orignally written by [Santhosh Thottingal](http://thottingal.in/), thanks to him.
+Developed by [Anuraj](http://dotnetthoughts.net).
 
 Licensed under MIT.
