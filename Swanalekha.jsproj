@@ -64,6 +64,7 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <Content Include="help\index.md" />
+    <Content Include="help\Ml-lipi.png" />
     <Content Include="images\SplashScreen.scale-100.png" />
     <Content Include="index.html" />
     <Content Include="images\LockScreenLogo.scale-200.png" />
