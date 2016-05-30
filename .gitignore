@@ -4,3 +4,11 @@
 
 /bin/Debug
 /bld/Debug
+/AppPackages
+/bin
+/bld
+/BundleArtifacts
+/Package.StoreAssociation.xml
+/Swanalekha_StoreKey.pfx
+/_pkginfo.txt
+/_scale-100.appx

@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Copyright (c) 2014 Santhosh Thottingal <santhosh.thottingal@gmail.com>
  * Released under the terms of the MIT license.
  */
